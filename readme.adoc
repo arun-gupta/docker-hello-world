@@ -1,0 +1,28 @@
+= Docker Hello World
+
+This repo creates a simple Hello World Docker image.
+
+== Build Docker image
+
+```
+docker image build -t arungupta/helloworld:1.0.0 .
+```
+
+== Push Docker image
+
+```
+docker image push arungupta/helloworld:1.0.0
+```
+
+== Run Docker container
+
+```
+docker container run -it -p 8080:8080 arungupta/helloworld:1.0.0
+```
+
+== Invoke application
+
+```
+curl http://localhost:8080
+```
+
